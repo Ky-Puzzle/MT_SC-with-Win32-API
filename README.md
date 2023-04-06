@@ -5,52 +5,61 @@ WiP
 This code attempts to mimic the Microsoft Windows utility sc.exe using C++ and Win32 API. The code in this repository is more or less a work in progress and may or may not be continually improved. Code so far only contains the create, delete, start, stop, failure, qdescription, query, and config functions. Since this code mimics sc.exe, it can be used in the same way (ex: sc.exe query = "MT_SC-with-Win32-API.exe" query).
 
 
-#How to Use:
+## How to Use:
 
 *Will need to be run as Admin*
 
-Create
+### Create
 
 DESCRIPTION: Creates a service
 
 "MT_SC-with-Win32-API.exe" create [Service Name] binPath= [Binary Path] <option1> <option2>...
 
-OPTIONS:
+OPTIONS:  
+    
+    - type= {own | share | kernel | filesys | rec | adapt | interact type= {own | share}}
+    - start= {boot | system | auto | demand | disabled | delayed-auto}
+    - error= {normal | severe | critical | ignore}
+    - binpath= <BinaryPathName>
+    - group= <LoadOrderGroup>
+    - tag= {yes | no}
+    - depend= <dependencies>
+    - obj= {<AccountName> | <ObjectName>}
+    - displayname= <DisplayName>
+    - password= <Password>
 
-  - displayname= <display name>
-  - type= type= {own \| share \| kernel \| filesys \| rec \| interact type= {own \| share}}
-  - start= {boot \| system \| auto \| demand \| disabled \| delayed-auto}
-  - error= {normal \| severe \| critical \| ignore}
-  - binpath= <binarypathname>
-  - group= <loadordergroup>
-  - tag= {yes \| no}
-  - depend= <dependencies>
-  - obj= {<accountname> \| <objectname>}
-  - password= <password>
 
+  
+  
 
-Delete
+### Delete
 
 DESCRIPTION: Deletes a service
 
 "MT_SC-with-Win32-API.exe" delete [Service Name]
 
+  
+  
 
-Start
+### Start
 
 DESCRIPTION: Starts a service
 
 "MT_SC-with-Win32-API.exe" start [Service Name]
 
 
-Stop
+  
+  
+### Stop
 
 DESCRIPTION: Stops a service
 
 "MT_SC-with-Win32-API.exe" stop [Service Name]
 
 
-Failure
+  
+  
+### Failure
 
 DESCRIPTION: Configures the failure actions for a service
 
@@ -63,47 +72,51 @@ OPTIONS:
     - command= <CommandLine>
     - actions= {"" | {[run/<MS>] | [restart/<MS>] | [reboot/<MS>]}[/...]
 
+  
+  
 
-qdescription
+### qdescription
 
 DESCRIPTION: Gets the description for a service
 
 "MT_SC-with-Win32-API.exe" qdescription [Service Name]
 
+  
+  
 
-Query
+### Query
 
 DESCRIPTION: Starts a service
 
 "MT_SC-with-Win32-API.exe" query [Service Name] <option1> <option2>
 
-OPTIONS:
-
-  - type= {driver | service | all}
-  - type= {own | share | interact | kernel | filesys | rec | adapt}
-  - state= {active | inactive | all}
-  - bufsize= <BufferSize>
-  - ri= <ResumeIndex>
-  - group= <GroupName>
+OPTIONS:  
+    
+    - type= {driver | service | all}
+    - type= {own | share | interact | kernel | filesys | rec | adapt}
+    - state= {active | inactive | all}
+    - bufsize= <BufferSize>
+    - ri= <ResumeIndex>
+    - group= <GroupName>
   
 
-Config
+### Config
 
 DESCRIPTION: Makes configuration changes to a service
 
 "MT_SC-with-Win32-API.exe" [Service Name] <option1> <option2>...
 
-OPTIONS:
-
-  - displayname= <display name>
-  - type= type= {own \| share \| kernel \| filesys \| rec \| interact type= {own \| share}}
-  - start= {boot \| system \| auto \| demand \| disabled \| delayed-auto}
-  - error= {normal \| severe \| critical \| ignore}
-  - binpath= <binarypathname>
-  - group= <loadordergroup>
-  - tag= {yes \| no}
-  - depend= <dependencies>
-  - obj= {<accountname> \| <objectname>}
-  - password= <password>
+OPTIONS:  
+    
+    - type= {own | share | kernel | filesys | rec | adapt | interact type= {own | share}}
+    - start= {boot | system | auto | demand | disabled | delayed-auto}
+    - error= {normal | severe | critical | ignore}
+    - binpath= <BinaryPathName>
+    - group= <LoadOrderGroup>
+    - tag= {yes | no}
+    - depend= <dependencies>
+    - obj= {<AccountName> | <ObjectName>}
+    - displayname= <DisplayName>
+    - password= <Password>
 
 
