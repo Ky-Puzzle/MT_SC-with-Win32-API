@@ -63,7 +63,7 @@ DESCRIPTION: Stops a service
 
 DESCRIPTION: Configures the failure actions for a service
 
-"MT_SC-with-Win32-API.exe" failure [<ServiceName>] <option1> <option2>
+"MT_SC-with-Win32-API.exe" failure [ServiceName] <option1> <option2>
 
 OPTIONS:  
     
