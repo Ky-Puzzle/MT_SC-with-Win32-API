@@ -13,7 +13,7 @@ This code/tool attempts to mimic the Microsoft Windows utility sc.exe using C++ 
 
 DESCRIPTION: Creates a service
 
-"MT_SC-with-Win32-API.exe" create [Service Name] binPath= [Binary Path] <option1> <option2>...
+"MT_SC with Win32 API.exe" create [Service Name] binPath= [Binary Path] <option1> <option2>...
 
 OPTIONS:  
     
@@ -36,7 +36,7 @@ OPTIONS:
 
 DESCRIPTION: Deletes a service
 
-"MT_SC-with-Win32-API.exe" delete [Service Name]
+"MT_SC with Win32 API.exe" delete [Service Name]
 
   
   
@@ -45,7 +45,7 @@ DESCRIPTION: Deletes a service
 
 DESCRIPTION: Starts a service
 
-"MT_SC-with-Win32-API.exe" start [Service Name]
+"MT_SC with Win32 API.exe" start [Service Name]
 
 
   
@@ -54,7 +54,7 @@ DESCRIPTION: Starts a service
 
 DESCRIPTION: Stops a service
 
-"MT_SC-with-Win32-API.exe" stop [Service Name]
+"MT_SC with Win32 API.exe" stop [Service Name]
 
 
   
@@ -63,7 +63,7 @@ DESCRIPTION: Stops a service
 
 DESCRIPTION: Configures the failure actions for a service
 
-"MT_SC-with-Win32-API.exe" failure [ServiceName] <option1> <option2>
+"MT_SC with Win32 API.exe" failure [ServiceName] <option1> <option2>
 
 OPTIONS:  
     
@@ -79,7 +79,7 @@ OPTIONS:
 
 DESCRIPTION: Gets the description for a service
 
-"MT_SC-with-Win32-API.exe" qdescription [Service Name]
+"MT_SC with Win32 API.exe" qdescription [Service Name]
 
   
   
@@ -88,7 +88,7 @@ DESCRIPTION: Gets the description for a service
 
 DESCRIPTION: Starts a service
 
-"MT_SC-with-Win32-API.exe" query [Service Name] <option1> <option2>
+"MT_SC with Win32 API.exe" query [Service Name] <option1> <option2>
 
 OPTIONS:  
     
@@ -104,7 +104,7 @@ OPTIONS:
 
 DESCRIPTION: Makes configuration changes to a service
 
-"MT_SC-with-Win32-API.exe" [Service Name] <option1> <option2>...
+"MT_SC with Win32 API.exe" [Service Name] <option1> <option2>...
 
 OPTIONS:  
     
