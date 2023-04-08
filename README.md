@@ -2,7 +2,7 @@
 
 WiP
 
-This code/tool attempts to mimic the Microsoft Windows utility sc.exe using C++ and Win32 API. The code/tool in this repository is more or less a work in progress and may or may not be continually improved. Tool/Code so far only contains the create, delete, start, stop, failure, qdescription, query, and config functions. Since this code mimics sc.exe, it can be used in the same way (ex: sc.exe query = "MT_SC-with-Win32-API.exe" query).
+This tool attempts to mimic the Microsoft Windows utility sc.exe using C++ and Win32 API. The tool in this repository is more or less a work in progress and may or may not be continually improved. Tool so far only contains the create, delete, start, stop, failure, qdescription, query, and config functions. Since this tool mimics sc.exe, it can be used in the same way (ex: sc.exe query = "MT_SC-with-Win32-API.exe" query).
 
 
 ## How to Use:
